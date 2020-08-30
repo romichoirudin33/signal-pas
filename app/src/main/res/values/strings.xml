@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Signal Pas</string>
+    <string name="version_name">1.0.1</string>
+    <string name="company_name">Lapas</string>
+
+    <string name="error_msg_unknown">Terjadi kesalahan. Ulangi proses lagi</string>
+    <string name="error_msg_unknown_device">Terjadi kesalahan. Device tidak terhubung</string>
+    <string name="error_msg_timeout_print">Respon terlalu lama, Cek koneksi dengan printer</string>
+    <string name="error_msg_no_internet">Tidak terhubung ke internet</string>
+    <string name="error_msg_timeout">Server terlalu lama merespon. Ulangi proses lagi</string>
+    <string name="error_empty_data_upload">Tidak terdapat data yang di upload</string>
+    <string name="empty_data">Tidak terdapat data</string>
+    <string name="not_choice">Belum dipilih</string>
+
+    <string name="title_info_lapas">Info Lapas</string>
+    <string name="title_assessment">Assessment</string>
+    <string name="title_assessment_hasil">Hasil Perhitungan</string>
+    <string name="title_pantau">Pantau</string>
+    <string name="title_activity_register">Daftar</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="submit">Submit</string>
+    <string name="edit">Ubah</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="save">Simpan Database</string>
+
+</resources>
