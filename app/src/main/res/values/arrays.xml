@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="agama">
+        <item>Islam</item>
+        <item>Hindu</item>
+        <item>Kristen</item>
+        <item>Katholik</item>
+        <item>Budha</item>
+        <item>Kong Hu Cu</item>
+    </string-array>
+
+    <string-array name="kewarganegaraan">
+        <item>WNI</item>
+        <item>WNA</item>
+    </string-array>
+
+    <string-array name="answer_assessment">
+        <item>Sangat Setuju</item>
+        <item>Setuju</item>
+        <item>Tidak Setuju</item>
+        <item>Sangat Tidak Setuju</item>
+    </string-array>
+</resources>

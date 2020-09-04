@@ -21,79 +21,103 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:background="@drawable/pengayoman"
+            android:background="@drawable/background"
             android:scaleType="centerCrop"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
                 <ImageButton
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:id="@+id/btn_info"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btn_wa"
                     android:scaleType="centerInside"
-                    android:background="@drawable/info_lapas"/>
+                    android:background="@drawable/wa"/>
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Informasi"
-                    android:textColor="@color/black"
+                    android:layout_height="40dp"
+                    android:text="afan sulistiono - XXXIX - 2020"
+                    android:textColor="@color/white_full"
                     android:textStyle="bold"
-                    android:gravity="center"/>
+                    android:textAlignment="textEnd"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical">
-                <ImageButton
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:id="@+id/btn_assessment"
-                    android:scaleType="centerInside"
-                    android:background="@drawable/pelayanan_wbp"/>
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Assessment"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:gravity="center"/>
-            </LinearLayout>
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/btn_info"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/info_lapas"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Informasi"
+                        android:textColor="@color/white_full"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:gravity="center"
-                android:orientation="vertical">
-                <ImageButton
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:id="@+id/btn_pantau"
-                    android:scaleType="centerInside"
-                    android:background="@drawable/pantau"/>
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Pantau"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:gravity="center"/>
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/btn_assessment"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/pelayanan_wbp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Assessment"
+                        android:textColor="@color/white_full"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/btn_pantau"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/pantau"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pagar"
+                        android:textColor="@color/white_full"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
 
     </LinearLayout>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

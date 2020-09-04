@@ -22,17 +22,97 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="Nama Lengkap"
+        android:text="Nama Petugas"
         android:textColor="@color/black"
         android:textSize="13dp"/>
 
     <EditText
-        android:id="@+id/ed_nama_lengkap"
+        android:id="@+id/ed_nama_petugas"
+        android:editable="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:singleLine="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Nama WBP"
+        android:textColor="@color/black"
+        android:textSize="13dp"/>
+
+    <EditText
+        android:id="@+id/ed_nama_lengkap"
+        android:focusedByDefault="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:singleLine="true" >
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Alamat"
+        android:textColor="@color/black"
+        android:textSize="13dp"/>
+
+    <EditText
+        android:id="@+id/ed_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Tempat Lahir / Tanggal"
+        android:textColor="@color/black"
+        android:textSize="13dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/ed_tempat_lahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_tgl"
+                android:text="Tanggal"/>
+            <TextView
+                android:id="@+id/txt_date_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="d/m/y"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -71,6 +151,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
+        android:text="Agama"
+        android:textColor="@color/black"
+        android:textSize="13dp"/>
+
+    <Spinner
+        android:id="@+id/sp_agama"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:entries="@array/agama"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Kewarganegaraan"
+        android:textColor="@color/black"
+        android:textSize="13dp"/>
+
+    <Spinner
+        android:id="@+id/sp_kewarganegaraan"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:entries="@array/kewarganegaraan"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
         android:text="Tindak pidana"
         android:textColor="@color/black"
         android:textSize="13dp"/>
@@ -97,6 +211,48 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Residivis"
+        android:textColor="@color/black"
+        android:textSize="13dp"/>
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radio_group_residivis"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="2dp">
+
+        <RadioButton
+            android:id="@+id/radio_residivis_ya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Ya"
+            android:textSize="12dp" />
+        <RadioButton
+            android:text="Tidak"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="12dp"
+            android:id="@+id/radio_residivis_tidak"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ed_jml_residivis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan jumlah residivis"
+        android:inputType="number"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
 
 </LinearLayout>

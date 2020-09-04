@@ -21,9 +21,14 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/power"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:layout_marginBottom="50dp"
-            android:src="@drawable/smart"/>
+            android:src="@drawable/signal"/>
 
 <!--        <TextView-->
 <!--            android:layout_width="match_parent"-->
@@ -46,7 +51,7 @@
             android:drawableLeft="@drawable/ic_baseline_account_circle_24"
             android:singleLine="true"
             android:drawablePadding="10dp"
-            android:hint="Username"
+            android:hint="Username / NIP"
             android:textSize="15sp"/>
         <EditText
             android:layout_width="match_parent"

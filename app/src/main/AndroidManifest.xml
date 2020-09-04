@@ -7,19 +7,23 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/smart"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".MaintanceActivity"
+            android:label="@string/title_activity_maintance"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".RegisterActivity"
             android:label="@string/title_activity_register"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ResultAssessmentActivity"
             android:label="@string/title_assessment_hasil"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".NewsActivity"
             android:label="@string/title_info_lapas" />
