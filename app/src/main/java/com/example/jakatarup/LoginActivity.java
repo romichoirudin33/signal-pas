@@ -75,9 +75,10 @@ public class LoginActivity extends AppCompatActivity {
                     if (is_login){
                         String resToken = response.body().getAccessToken();
                         util.simpanToken(resToken);
-                        Intent intent = new Intent(getApplicationContext(), AssessmentActivity.class);
-                        intent.putExtra("nama_petugas", response.body().getName());
-                        intent.putExtra("user_id", response.body().getId());
+                        util.simpanUser(response.body().getId(), response.body().getName());
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+//                        intent.putExtra("nama_petugas", response.body().getName());
+//                        intent.putExtra("user_id", response.body().getId());
                         startActivity(intent);
                         finish();
                     }else{

@@ -25,7 +25,7 @@
             android:textColor="@color/black"
             android:textSize="20dp"
             android:gravity="center"
-            android:text="Maintance"/>
+            android:text="Maintenance"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -34,6 +34,7 @@
             android:textColor="@color/black"
             android:textSize="14dp"
             android:gravity="center"
+            android:id="@+id/txt_keterangan"
             android:text="Halaman ini masih dalam pengembangan"/>
     </LinearLayout>
 

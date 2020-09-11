@@ -50,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
+        android:inputType="number"
         android:singleLine="true" >
     </EditText>
 
@@ -96,6 +97,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone"
+        android:singleLine="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="13dp"/>
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
         android:singleLine="true"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"/>

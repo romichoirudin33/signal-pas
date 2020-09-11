@@ -147,7 +147,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="14. Saya dapat menjalin hubungan yang harmonis dengan atasan, rekan kerja, bawahan maupun karyawan dari departemen lain."
+        android:text="14. Saya dapat menjalin hubungan yang harmonis dengan atasan, rekan kerja, bawahan maupun ASN dari instansi lain."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 
@@ -282,7 +282,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="17. Saya selalu berhati-hati dalam setiap tindakan yang dilakukan dalam menyelesaikan tugas kerja yang ada."
+        android:text="17. Saya selalu berhati-hati dalam setiap tindakan yang dilakukan dalam menyelesaikan tugas."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 
@@ -372,7 +372,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="19. Saya mencoba untuk meminta bantuan ketika mengahadapi kesulitan yang saya temui dalam pekerjaan."
+        android:text="19. Saya mencoba untuk meminta bantuan ketika menghadapi kesulitan yang saya temui dalam pekerjaan."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 

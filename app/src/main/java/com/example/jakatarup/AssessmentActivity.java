@@ -18,6 +18,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.jakatarup.Utils.Util;
+
 import java.util.Arrays;
 import java.util.Calendar;
 
@@ -80,6 +82,8 @@ public class AssessmentActivity extends AppCompatActivity {
     Button btn_selesai;
     int user_id;
 
+    Util util;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,10 +99,12 @@ public class AssessmentActivity extends AppCompatActivity {
 
         init();
 
-        Bundle e = getIntent().getExtras();
-        String nama = getIntent().getStringExtra("nama_petugas") == null ?  "Nama Petugas" : getIntent().getStringExtra("nama_petugas");
-        user_id = getIntent().getIntExtra("user_id", 1);
-        ed_nama_petugas.setText(nama);
+        util = new Util(this);
+
+//        Bundle e = getIntent().getExtras();
+//        String nama = getIntent().getStringExtra("nama_petugas") == null ?  "Nama Petugas" : getIntent().getStringExtra("nama_petugas");
+//        user_id = getIntent().getIntExtra("user_id", 1);
+        ed_nama_petugas.setText(util.getName());
 
         btn_tgl.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="C. Resiko Stabilitas"
+        android:text="C. Risiko Stabilitas"
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Apakah Anda pernah terlibat dalam aksi unjuk rasa sebelumnya (bisa sebelum masuk rutan/lapas, atau setelah di dalam)"
+            android:text="Apakah Anda pernah terlibat dalam aksi unjuk rasa sebelumnya (bisa sebelum masuk rutan/lapas, atau setelah di dalam rutan/lapas)"
             android:textColor="@color/black"
             android:textSize="13dp"/>
     </LinearLayout>
@@ -247,7 +247,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Apakah Anda pernah didiagnosis untuk memiliki kecendrungan tingkat agresifitas yang tinggi/kepribadian yang anti sosial/kepribadian anti otoritas"
+            android:text="Apakah Anda pernah didiagnosis untuk memiliki kecenderungan tingkat agresifitas yang tinggi/kepribadian yang anti sosial/kepribadian anti otoritas"
             android:textColor="@color/black"
             android:textSize="13dp"/>
     </LinearLayout>

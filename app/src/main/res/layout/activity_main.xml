@@ -7,117 +7,323 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/layout_parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <ImageView
+            android:id="@+id/jumbotron"
             android:layout_width="match_parent"
-            android:layout_height="210dp"
-            android:scaleType="fitStart"
-            android:src="@drawable/jumbotron"
-            tools:ignore="MissingConstraints" />
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/jumbotron" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/background"
-            android:scaleType="centerCrop"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/layout_menu"
+                android:layout_alignTop="@+id/layout_menu"
+                android:layout_alignRight="@id/layout_menu"
+                android:layout_alignBottom="@+id/layout_menu"
+                android:background="@drawable/background"
+                tools:ignore="NotSibling" />
+
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
-                <ImageButton
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:id="@+id/btn_wa"
-                    android:scaleType="centerInside"
-                    android:background="@drawable/wa"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="afan sulistiono - XXXIX - 2020"
-                    android:textColor="@color/white_full"
-                    android:textStyle="bold"
-                    android:textAlignment="textEnd"
-                    android:gravity="center"
-                    tools:ignore="RtlCompat" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
                 android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:gravity="center"
-                    android:orientation="vertical">
-                    <ImageButton
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:id="@+id/btn_info"
-                        android:scaleType="centerInside"
-                        android:background="@drawable/info_lapas"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Informasi"
-                        android:textColor="@color/white_full"
-                        android:textStyle="bold"
-                        android:gravity="center"/>
-                </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/layout_menu"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:gravity="center"
+                    android:layout_height="match_parent"
                     android:orientation="vertical">
-                    <ImageButton
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:id="@+id/btn_assessment"
-                        android:scaleType="centerInside"
-                        android:background="@drawable/pelayanan_wbp"/>
-                    <TextView
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Assessment"
-                        android:textColor="@color/white_full"
-                        android:textStyle="bold"
-                        android:gravity="center"/>
-                </LinearLayout>
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_edittext_disable"
+                        android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:gravity="center"
-                    android:orientation="vertical">
-                    <ImageButton
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:id="@+id/btn_pantau"
-                        android:scaleType="centerInside"
-                        android:background="@drawable/pantau"/>
-                    <TextView
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Area Publik"
+                            android:textColor="@color/white_full"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/btn_wa"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/info_lapas"
+                                    android:scaleType="centerInside" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:gravity="center"
+                                    android:text="Layanan Pengaduan"
+                                    android:textColor="@color/white_full"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/btn_info"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/informasi"
+                                    android:scaleType="centerInside" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:gravity="center_horizontal"
+                                    android:text="Informasi"
+                                    android:textColor="@color/white_full"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/btn_news"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/berita"
+                                    android:scaleType="centerInside" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:gravity="center_horizontal"
+                                    android:text="Berita"
+                                    android:textColor="@color/white_full"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Pagar"
-                        android:textColor="@color/white_full"
-                        android:textStyle="bold"
-                        android:gravity="center"/>
-                </LinearLayout>
-            </LinearLayout>
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_edittext_disable"
+                        android:orientation="vertical">
 
-        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Area Petugas"
+                            android:textColor="@color/white_full"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:gravity="center"
+                                android:id="@+id/menu_assessment"
+                                android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/btn_assessment"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/pelayanan_wbp"
+                                    android:scaleType="centerInside" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Assessment"
+                                    android:textColor="@color/white_full"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/btn_user"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/profil"
+                                    android:scaleType="centerInside" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:gravity="center_horizontal"
+                                    android:text="Login"
+                                    android:id="@+id/txt_user"
+                                    android:textColor="@color/white_full"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/btn_produk"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/produk"
+                                    android:scaleType="centerInside" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:gravity="center_horizontal"
+                                    android:text="Produk"
+                                    android:textColor="@color/white_full"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_edittext_disable"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Area Admin"
+                            android:textColor="@color/white_full"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/btn_pantau"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/pantau"
+                                    android:scaleType="centerInside" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:gravity="center_horizontal"
+                                    android:text="Pagar"
+                                    android:textColor="@color/white_full"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/btn_trolling"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/trolling"
+                                    android:scaleType="centerInside" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:gravity="center_horizontal"
+                                    android:text="Trolling"
+                                    android:textColor="@color/white_full"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/rounded_edittext_disable"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_copyright_white_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="afansulistiono"
+                            android:textColor="@color/white_full"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

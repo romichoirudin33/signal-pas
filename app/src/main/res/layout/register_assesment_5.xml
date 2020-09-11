@@ -147,7 +147,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="44. Saya merasa dihargai baik sesama rekan kerja maupun pimpinan sehingga terwujudnya lingkungan kerja yang baik."
+        android:text="44. Saya merasa dihargai baik sesama rekan kerja maupun pimpinan sehingga terwujud lingkungan kerja yang baik."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 

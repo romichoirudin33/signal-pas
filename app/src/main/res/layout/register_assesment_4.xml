@@ -102,7 +102,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="33. Saya sering memikirkan bagaimana menyelesaikan dengan cepat dan hasil yang baik."
+        android:text="33. Saya sering memikirkan bagaimana menyelesaikan pekerjaan dengan cepat dan hasil yang baik."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 
@@ -147,7 +147,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="34. Saya menekankan pada hasil, tapi juga proses usaha untuk mencapai hasil yang optimal."
+        android:text="34. Saya menekankan pada hasil, tetapi juga proses usaha untuk mencapai hasil yang optimal."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 
@@ -192,7 +192,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="35. Saya termotivasi menjadi karyawan yang baik dengan mengisi jam kerja untuk menyelesaikan semua pekerjaan yang ada."
+        android:text="35. Saya termotivasi menjadi ASN yang baik dengan mengisi jam kerja untuk menyelesaikan semua pekerjaan yang ada."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 
@@ -282,7 +282,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="37. Saya merasa senang dengan pekerjaan yang saya tekun karena dapat memberikan manfaat bagi perusahaan yang memotivasi saya dalam bekerja."
+        android:text="37. Saya merasa senang dengan pekerjaan yang saya tekuni karena dapat memberikan manfaat bagi instansi yang memotivasi saya dalam bekerja."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 
@@ -327,7 +327,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="38. Saya berusaha menjalin kerjasama dengan anggota satuan kerja lain untuk meningkatkan hasil yang terbaik bagi perusahaan."
+        android:text="38. Saya berusaha menjalin kerjasama dengan anggota satuan kerja lain untuk meningkatkan hasil yang terbaik bagi instansi."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 

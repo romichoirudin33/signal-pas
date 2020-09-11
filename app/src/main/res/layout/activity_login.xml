@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-<!--    <RelativeLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-<!--        -->
-<!--    </RelativeLayout>-->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,23 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/power"/>
+            android:src="@drawable/icon"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_marginBottom="50dp"
-            android:src="@drawable/signal"/>
-
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="@string/login"-->
-<!--            android:textColor="@color/colorPrimary"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textAllCaps="true"-->
-<!--            android:textSize="35dp"-->
-<!--            android:gravity="center"-->
-<!--            android:layout_marginBottom="25dp"/>-->
+            android:src="@drawable/signal_full"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -48,10 +31,11 @@
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:id="@+id/ed_username"
+            android:inputType="number"
             android:drawableLeft="@drawable/ic_baseline_account_circle_24"
             android:singleLine="true"
             android:drawablePadding="10dp"
-            android:hint="Username / NIP"
+            android:hint="NIP"
             android:textSize="15sp"/>
         <EditText
             android:layout_width="match_parent"

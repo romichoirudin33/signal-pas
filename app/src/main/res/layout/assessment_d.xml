@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="D. Resiko Pada Masyarakat"
+        android:text="D. Risiko Pada Masyarakat"
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -247,7 +247,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Apakah Anda memiliki pengaruh adat/budaya/ sosial yang besar"
+            android:text="Apakah Anda memiliki pengaruh adat/budaya/sosial yang besar"
             android:textColor="@color/black"
             android:textSize="13dp"/>
     </LinearLayout>
@@ -290,7 +290,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Apakah Anda memiliki kekuatan secara keagamaan, yang besar"
+            android:text="Apakah Anda memiliki kekuatan secara keagamaan yang besar"
             android:textColor="@color/black"
             android:textSize="13dp"/>
     </LinearLayout>
@@ -333,7 +333,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Apakah Anda  memiliki kekuatan bedasarkan posisinya dalam organisasi kriminal"
+            android:text="Apakah Anda memiliki kekuatan berdasarkan posisi dalam organisasi kriminal"
             android:textColor="@color/black"
             android:textSize="13dp"/>
     </LinearLayout>
@@ -376,7 +376,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Apakah Anda memiliki kekuatan bedasarkan posisinya dalam kelompok separatisme"
+            android:text="Apakah Anda memiliki kekuatan berdasarkan posisi dalam kelompok separatisme"
             android:textColor="@color/black"
             android:textSize="13dp"/>
     </LinearLayout>
@@ -419,7 +419,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Apakah Anda memiliki kekuatan bedasarkan posisnya dalam kelompok/organisasi fundementalis/ekstrimis berbasis agama "
+            android:text="Apakah Anda memiliki kekuatan berdasarkan posisi dalam kelompok/organisasi fundamentalis/ekstrimis berbasis agama"
             android:textColor="@color/black"
             android:textSize="13dp"/>
     </LinearLayout>

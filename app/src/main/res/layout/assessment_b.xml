@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="B. RESIKO KESELAMATAN"
+        android:text="B. Risiko KESELAMATAN"
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Kasus Apakah Anda termasuk tindak pidana dengan menggunakan kekerasan"
+            android:text="Apakah kasus Anda termasuk tindak pidana dengan menggunakan kekerasan"
             android:textColor="@color/black"
             android:textSize="13dp"/>
     </LinearLayout>
@@ -419,7 +419,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Apakah Anda merupakan anggota/pernah menjadi anggota kelompok/jaringan esktrimis/fundamentalis berbasis agama"
+            android:text="Apakah Anda merupakan anggota/pernah menjadi anggota kelompok/jaringan ekstrimis/fundamentalis berbasis agama"
             android:textColor="@color/black"
             android:textSize="13dp"/>
     </LinearLayout>

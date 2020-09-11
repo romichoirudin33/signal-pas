@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="A. Resiko Keamanan"
+        android:text="A. Risiko Keamanan"
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -333,7 +333,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Apakah Anda memiliki jaringan di dalam lapas/rutan yang suatu waktu dapat membantunya untuk melarikan diri apabila dibutuhkan"
+            android:text="Apakah Anda memiliki jaringan di dalam lapas/rutan yang suatu waktu dapat membantu untuk melarikan diri apabila dibutuhkan"
             android:textColor="@color/black"
             android:textSize="13dp"/>
     </LinearLayout>
@@ -376,7 +376,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="Apakah Anda memiliki jaringan di luar lapas/rutan yang suatu waktu dapat membantunya untuk melarikan diri apabila dibutuhkan"
+            android:text="Apakah Anda memiliki jaringan di luar lapas/rutan yang suatu waktu dapat membantu untuk melarikan diri apabila dibutuhkan"
             android:textColor="@color/black"
             android:textSize="13dp"/>
     </LinearLayout>

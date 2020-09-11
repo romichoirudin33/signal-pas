@@ -8,10 +8,48 @@
     android:paddingRight="10dp"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:background="@color/white_full">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Isilah beberapa pertanyaan berikut sesuai dengan anda"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Keterangan"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SS (Sangat Setuju)"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S (Setuju)"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TS (Tidak Setuju)"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STS (Sangat Tidak Setuju)"/>
+    </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Assessment Petugas Kemasyarakatan"
+        android:text="Assessment Petugas Pemasyarakatan"
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -156,7 +194,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="4. Menurut saya, selam bekerja di perusahaan ini sebagian besar dapat terselesaikan dengan baik."
+        android:text="4. Menurut saya, selama bekerja di instansi ini sebagian besar dapat terselesaikan dengan baik."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 
@@ -201,7 +239,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="5. Saya mampu untuk akrab terhadap rekan kerja baru yang ada di perusahaan ini."
+        android:text="5. Saya mampu untuk akrab terhadap rekan kerja baru yang ada di instansi ini."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 
@@ -426,7 +464,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:text="10. Saya merasa telah bekerja sesuai prosedur di perusahaan ini."
+        android:text="10. Saya merasa telah bekerja sesuai prosedur di instansi ini."
         android:textColor="@color/black"
         android:textSize="13dp"/>
 

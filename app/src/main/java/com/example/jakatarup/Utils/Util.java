@@ -38,11 +38,9 @@ public class Util {
         editor.commit();
     }
 
-    public void simpanUser(Integer user_id, String name, String email, String picture){
+    public void simpanUser(Integer user_id, String name){
         editor.putString(USER_ID, String.valueOf(user_id));
         editor.putString(NAME, name);
-        editor.putString(EMAIL, email);
-        editor.putString(PICTURE, picture);
         editor.commit();
     }
 

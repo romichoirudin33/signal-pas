@@ -31,7 +31,7 @@ import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText ed_nama_lengkap, ed_nip, ed_jabatan, ed_upt, ed_phone, ed_password, ed_ulangi_password;
+    EditText ed_nama_lengkap, ed_nip, ed_jabatan, ed_upt, ed_phone, ed_email, ed_password, ed_ulangi_password;
     Button btn_selesai;
 
     RadioGroup[] radioGroups = new RadioGroup[46];
@@ -90,7 +90,7 @@ public class RegisterActivity extends AppCompatActivity {
         authInterface = ApiClient.getClient().create(AuthInterface.class);
         String name = ed_nama_lengkap.getText().toString();
         String username = ed_nip.getText().toString();
-        String email = username+"@mail.com";
+        String email = ed_email.getText().toString();
         String password = ed_password.getText().toString();
         String jabatan = ed_jabatan.getText().toString();
         String upt = ed_upt.getText().toString();
@@ -123,6 +123,7 @@ public class RegisterActivity extends AppCompatActivity {
         ed_jabatan = findViewById(R.id.ed_jabatan);
         ed_upt = findViewById(R.id.ed_upt);
         ed_phone = findViewById(R.id.ed_phone);
+        ed_email = findViewById(R.id.ed_email);
         ed_password = findViewById(R.id.ed_password);
         ed_ulangi_password = findViewById(R.id.ed_ulangi_password);
 
