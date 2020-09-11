@@ -104,6 +104,7 @@ public class AssessmentActivity extends AppCompatActivity {
 //        Bundle e = getIntent().getExtras();
 //        String nama = getIntent().getStringExtra("nama_petugas") == null ?  "Nama Petugas" : getIntent().getStringExtra("nama_petugas");
 //        user_id = getIntent().getIntExtra("user_id", 1);
+        user_id = Integer.valueOf(util.getUserId());
         ed_nama_petugas.setText(util.getName());
 
         btn_tgl.setOnClickListener(new View.OnClickListener() {
