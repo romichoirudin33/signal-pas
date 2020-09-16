@@ -24,32 +24,69 @@
             android:layout_marginBottom="50dp"
             android:src="@drawable/signal_full"/>
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etUsernameLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:id="@+id/ed_username"
-            android:inputType="number"
-            android:drawableLeft="@drawable/ic_baseline_account_circle_24"
-            android:singleLine="true"
-            android:drawablePadding="10dp"
-            android:hint="NIP"
-            android:textSize="15sp"/>
-        <EditText
+            android:layout_marginRight="25dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NIP"
+                android:inputType="number"
+                android:textSize="15sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:drawablePadding="10dp"
-            android:id="@+id/ed_password"
-            android:drawableLeft="@drawable/ic_baseline_lock_24"
-            android:singleLine="true"
-            android:inputType="textPassword"
-            android:hint="Password"
-            android:textSize="15sp"/>
+            android:layout_marginRight="25dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="15sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <EditText-->
+<!--            android:id="@+id/ed_username"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="25dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="25dp"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_account_circle_24"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:hint="NIP"-->
+<!--            android:inputType="number"-->
+<!--            android:singleLine="true"-->
+<!--            android:textSize="15sp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/ed_password"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="25dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="25dp"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_lock_24"-->
+
+<!--            android:drawablePadding="10dp"-->
+<!--            android:hint="Password"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:singleLine="true"-->
+<!--            android:textSize="15sp" />-->
 
         <Button
             android:layout_width="match_parent"

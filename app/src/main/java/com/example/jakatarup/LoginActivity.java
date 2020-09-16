@@ -85,7 +85,8 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 } else{
-                    Toast.makeText(getApplicationContext(), "Terjadi kesalahan, hubungi pengembang", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getApplicationContext(), "Terjadi kesalahan, hubungi pengembang", Toast.LENGTH_SHORT).show();
                 }
                 Log.d(util.TAG, response.toString());
             }
