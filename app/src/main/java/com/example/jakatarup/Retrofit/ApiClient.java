@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    public static final String URL = "http://signal-pas.herokuapp.com";
+    public static final String URL = "http://signalpas.com";
     public static final String BASE_URL = URL+"/api/";
 
     private static Retrofit retrofit = null;
